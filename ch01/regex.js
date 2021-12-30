@@ -14,7 +14,10 @@ var myRe = /[C-G]/;
 var myArray = myRe.exec('we should call it Drenched Blossoms');
 console.log(myArray);
 
-
+//negate a pattern
+var myRe = /[^A-Z]/;
+var myArray = myRe.exec('Oyfn pripetchik');
+console.log(myArray);
 
 //references；
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
