@@ -48,6 +48,31 @@ var myRe = /^Fine\.$/;
 var myArray = myRe.exec('Fine.');
 console.log(myArray);
 
+//disjunction
+var regexp = /fl(y|ies)/g;
+var str = "there is a fly on the table and many flies around.";
+console.log(regexp.exec(str));
+console.log(regexp.exec(str));
+
+//operator precedence hierarchy
+//Parenthesis               ()
+//Counters                  * + ? {}
+//Sequences and anchors     the ^my end$
+//Disjunction               |
+var regexp = /the|any/;
+var str = "theany the any";
+console.log(regexp.exec(str));
+
+//regex matches the longest string by default
+var regexp = /[a-z]*/;
+var str = "there is a fly on the table";
+console.log(regexp.exec(str));
+
+//but you can match the shortest string by append a ?
+var regexp = /[a-z]+?/;
+var str = "there is a fly on the table";
+console.log(regexp.exec(str));
+
 //References；
 //[1] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 //[2] https://web.stanford.edu/~jurafsky/slp3/ed3book_dec292021.pdf
