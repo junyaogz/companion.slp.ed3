@@ -91,6 +91,14 @@ console.log(regexp.exec(str));
 // {n,}	at least n occurrences of the previous char or expression
 // {,m}	up to m occurrences of the previous char or expression
 
+// special characters that need to be backslashed:
+// RE	Match 
+// \*	an asterisk “*” 
+// \.	a period “.” 
+// \?	a question mark 
+// \n	a newline
+// \t	a tab
+
 //References；
 //[1] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 //[2] https://web.stanford.edu/~jurafsky/slp3/ed3book_dec292021.pdf
