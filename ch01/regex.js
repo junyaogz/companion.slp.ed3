@@ -81,6 +81,16 @@ console.log(regexp.exec(str));
 // \s 	[ \r\t\n\f]   	whitespace (space, tab)
 // \S 	[^\s] 		Non-whitespace 	
 
+// REs for counting：
+// RE	Match
+// *	zero or more occurrences of the previous char or expression
+// +	one or more occurrences of the previous char or expression
+// ?	exactly zero or one occurrence of the previous char or expression
+// {n}	n occurrences of the previous char or expression
+// {n,m}	from n to m occurrences of the previous char or expression
+// {n,}	at least n occurrences of the previous char or expression
+// {,m}	up to m occurrences of the previous char or expression
+
 //References；
 //[1] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 //[2] https://web.stanford.edu/~jurafsky/slp3/ed3book_dec292021.pdf
