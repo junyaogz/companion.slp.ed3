@@ -73,6 +73,14 @@ var regexp = /[a-z]+?/;
 var str = "there is a fly on the table";
 console.log(regexp.exec(str));
 
+// RE	Expansion	Match		First Matches
+// \d	[0-9]		any digit 		Party of 5
+// \D 	[^0-9] 		any non-digit 	Blue moon
+// \w 	[a-zA-Z0-9_] 	any alphanumeric/underscore Daiyu
+// \W 	[^\w] 		a non-alphanumeric !!!!
+// \s 	[ \r\t\n\f] 		whitespace (space, tab)
+// \S 	[^\s] 		Non-whitespace 	in Concord
+
 //References；
 //[1] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 //[2] https://web.stanford.edu/~jurafsky/slp3/ed3book_dec292021.pdf
