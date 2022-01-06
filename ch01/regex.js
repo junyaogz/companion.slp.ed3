@@ -77,8 +77,8 @@ console.log(regexp.exec(str));
 // \d	[0-9]		any digit 		
 // \D 	[^0-9] 		any non-digit 	
 // \w 	[a-zA-Z0-9_] 	any alphanumeric/underscore 
-// \W 	[^\w] 		a non-alphanumeric 
-// \s 	[ \r\t\n\f] 		whitespace (space, tab)
+// \W 	[^\w]     a non-alphanumeric 
+// \s 	[ \r\t\n\f]   whitespace (space, tab)
 // \S 	[^\s] 		Non-whitespace 	
 
 //References；
