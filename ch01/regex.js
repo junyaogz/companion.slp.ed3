@@ -73,31 +73,10 @@ var regexp = /[a-z]+?/;
 var str = "there is a fly on the table";
 console.log(regexp.exec(str));
 
-// RE	Expansion	Match		
-// \d	[0-9]		any digit 		
-// \D 	[^0-9] 		any non-digit 	
-// \w 	[a-zA-Z0-9_] 	any alphanumeric/underscore 
-// \W 	[^\w]     		a non-alphanumeric 
-// \s 	[ \r\t\n\f]   	whitespace (space, tab)
-// \S 	[^\s] 		Non-whitespace 	
-
-// REs for counting：
-// RE	Match
-// *	zero or more occurrences of the previous char or expression
-// +	one or more occurrences of the previous char or expression
-// ?	exactly zero or one occurrence of the previous char or expression
-// {n}	n occurrences of the previous char or expression
-// {n,m}	from n to m occurrences of the previous char or expression
-// {n,}	at least n occurrences of the previous char or expression
-// {,m}	up to m occurrences of the previous char or expression
-
-// special characters that need to be backslashed:
-// RE	Match 
-// \*	an asterisk “*” 
-// \.	a period “.” 
-// \?	a question mark 
-// \n	a newline
-// \t	a tab
+//a complex reg to match space
+var regexp = /\b[0-9]+(\.[0-9]+)? *(GB|[Gg]igabytes?)\b/;
+var str = "this usb stick is 62.50GB rather than 64 Gigabytes"
+console.log(regexp.exec(str));
 
 //References；
 //[1] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
