@@ -75,7 +75,20 @@ console.log(regexp.exec(str));
 
 //a complex reg to match space
 var regexp = /\b[0-9]+(\.[0-9]+)? *(GB|[Gg]igabytes?)\b/;
-var str = "this usb stick is 62.50GB rather than 64 Gigabytes"
+var str = "this usb stick is 62.50GB rather than 64 Gigabytes";
+console.log(regexp.exec(str));
+
+//capture group and register
+var regexp = /the (.*)er they (.*), the \1er we \2/;
+var str = "the faster they ran, the faster we ran";
+console.log(regexp.exec(str));
+
+//rule out special cases by lookahead assertions
+//they match but not advance the cursor
+//positive lookahead ?=,  negative lookahead ?!
+//match any single word that doesn’t start with “Volcano” at the begining
+var regexp = /^(?!Volcano)[A-Za-z]+/;
+var str = "Volatile";
 console.log(regexp.exec(str));
 
 //References；
