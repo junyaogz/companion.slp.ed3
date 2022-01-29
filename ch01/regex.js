@@ -91,6 +91,7 @@ var regexp = /^(?!Volcano)[A-Za-z]+/;
 var str = "Volatile";
 console.log(regexp.exec(str));
 
+
 //References；
 //[1] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 //[2] https://web.stanford.edu/~jurafsky/slp3/ed3book_dec292021.pdf
